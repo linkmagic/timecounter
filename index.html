@@ -4,30 +4,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Time Counter</title>
 </head>
-
-<style>
-  .totalTime {
-    font-family: monospace;
-    font-size: 18px;
-  }
-</style>
-
 <body>
-  <div id="idtotaltime" class="totalTime">00 d, 00 h, 00 m, 00 s</div>
-  <div>
-    <button>Start</button>
-    <button>Stop</button>
+  
+  <div class="totalTimeContainer">
+    <div class="totalTimeItem">
+      <div id="idTotalDays" class="totalTimeValue">88</div>
+      <div class="totalTimeLabel">DAYS</div>
+    </div>
+    <div class="totalTimeItem">
+      <div id="idTotalDays" class="totalTimeValue">88</div>
+      <div class="totalTimeLabel">HOURS</div>
+    </div>
+    <div class="totalTimeItem">
+      <div id="idTotalDays" class="totalTimeValue">88</div>
+      <div class="totalTimeLabel">MINUTES</div>
+    </div>
+    <div class="totalTimeItem">
+      <div id="idTotalDays" class="totalTimeValue">88</div>
+      <div class="totalTimeLabel">SECONDS</div>
+    </div>
   </div>
-  <script type="text/javascript">
-    let divTotalTime = document.getElementById('idtotaltime');
-    let days = 0, hours = 0, minutes = 0, seconds = 0;
-    let timeCounterTimer = setInterval(function() {
-      seconds++;
-      divTotalTime.textContent = seconds;
-    }, 1000);
-    
-  </script>
+
+  <br><br><br><br><br>
+
+  <!-- <div id="idTotalHours" class="totalTimeLabel">34</div>
+  <div id="idTotalMinutes" class="totalTimeLabel">56</div>
+  <div id="idTotalSeconds" class="totalTimeLabel">78</div> -->
+  
+  <div>
+    <div>
+      <img src="img/timer_start.png" alt="Start" onclick="clickStart()">
+      <img src="img/timer_pause.png" alt="Pause" onclick="clickPause()">
+    </div>
+    <div>
+      <div>
+        <input type="number">
+        <input type="number">
+        <input type="number">
+        <input type="number">
+        <img src="img/timer_save.png" alt="Save" onclick="clickSave()">
+      </div>
+      <img src="img/timer_reset.png" alt="Reset" onclick="clickReset()">
+    </div>
+  </div>
+  <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>

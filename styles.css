@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Digital7Mono";
+  src: url(./font/digital-7/digital-7_mono.ttf) format("truetype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #2D3E50;
+}
+
+.totalTimeContainer {
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 16px 0 16px 0;
+}
+
+.totalTimeItem {
+
+}
+
+.totalTimeValue {
+  padding: 10px 10px 2px 10px;
+  font-family: "Digital7Mono";
+  font-size: 64px;
+  color: white;
+  border: 1px solid #16A086;
+  border-radius: 12px;
+  background: #16A086;
+  box-shadow: 3px 3px 5px -2px #000;
+}
+
+.totalTimeLabel {
+  margin-top: 16px;
+  font-family: monospace;
+  font-size: 17px;
+  text-align: center;
+  color: #769897;
+}
+
+.inputValue {
+  
+}
