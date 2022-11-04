@@ -41,6 +41,19 @@ body {
   color: #769897;
 }
 
-.inputValue {
-  
+.imgIcon {
+  width: 128px;
+  height: 128px;
+}
+
+.controlButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.panelTopGap {
+  margin-top: 120px;
 }

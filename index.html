@@ -11,45 +11,32 @@
   
   <div class="totalTimeContainer">
     <div class="totalTimeItem">
-      <div id="idTotalDays" class="totalTimeValue">88</div>
+      <div id="idTotalDays" class="totalTimeValue">00</div>
       <div class="totalTimeLabel">DAYS</div>
     </div>
     <div class="totalTimeItem">
-      <div id="idTotalDays" class="totalTimeValue">88</div>
+      <div id="idTotalHours" class="totalTimeValue">00</div>
       <div class="totalTimeLabel">HOURS</div>
     </div>
     <div class="totalTimeItem">
-      <div id="idTotalDays" class="totalTimeValue">88</div>
+      <div id="idTotalMinutes" class="totalTimeValue">00</div>
       <div class="totalTimeLabel">MINUTES</div>
     </div>
     <div class="totalTimeItem">
-      <div id="idTotalDays" class="totalTimeValue">88</div>
+      <div id="idTotalSeconds" class="totalTimeValue">00</div>
       <div class="totalTimeLabel">SECONDS</div>
     </div>
   </div>
-
-  <br><br><br><br><br>
-
-  <!-- <div id="idTotalHours" class="totalTimeLabel">34</div>
-  <div id="idTotalMinutes" class="totalTimeLabel">56</div>
-  <div id="idTotalSeconds" class="totalTimeLabel">78</div> -->
   
-  <div>
-    <div>
-      <img src="img/timer_start.png" alt="Start" onclick="clickStart()">
-      <img src="img/timer_pause.png" alt="Pause" onclick="clickPause()">
-    </div>
-    <div>
-      <div>
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <img src="img/timer_save.png" alt="Save" onclick="clickSave()">
-      </div>
-      <img src="img/timer_reset.png" alt="Reset" onclick="clickReset()">
-    </div>
+  <div class="controlButtonsContainer">
+    <img class="imgIcon" src="img/timer_start.png" alt="Start" onclick="clickStart()">
+    <img class="imgIcon" src="img/timer_pause.png" alt="Pause" onclick="clickPause()">
   </div>
+
+  <div class="controlButtonsContainer panelTopGap">
+    <img class="imgIcon" src="img/timer_reset.png" alt="Reset" onclick="clickReset()">
+  </div>
+
   <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
