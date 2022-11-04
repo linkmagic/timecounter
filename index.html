@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Counter</title>
+</head>
+
+<style>
+  .totalTime {
+    font-family: monospace;
+    font-size: 18px;
+  }
+</style>
+
+<body>
+  <div id="idtotaltime" class="totalTime">00 d, 00 h, 00 m, 00 s</div>
+  <div>
+    <button>Start</button>
+    <button>Stop</button>
+  </div>
+  <script type="text/javascript">
+    let divTotalTime = document.getElementById('idtotaltime');
+    let days = 0, hours = 0, minutes = 0, seconds = 0;
+    let timeCounterTimer = setInterval(function() {
+      seconds++;
+      divTotalTime.textContent = seconds;
+    }, 1000);
+    
+  </script>
+</body>
+</html>
