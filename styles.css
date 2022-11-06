@@ -18,10 +18,6 @@ body {
   padding: 16px 0 16px 0;
 }
 
-.totalTimeItem {
-
-}
-
 .totalTimeValue {
   padding: 10px 10px 2px 10px;
   font-family: "Digital7Mono";
@@ -51,9 +47,33 @@ body {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  margin-top: 32px;
+  margin: 32px 0;
 }
 
 .panelTopGap {
   margin-top: 120px;
+}
+
+.statisticsTableContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 32px 0;
+}
+
+.statTableItem {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 4px 12px;
+  padding: 12px;
+  border: 1px solid #769897;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 22px;
+  text-align: center;
+}
+
+.disabledElement {
+  opacity: 0.25;
 }

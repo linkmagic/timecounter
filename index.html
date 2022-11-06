@@ -10,31 +10,33 @@
 <body>
   
   <div class="totalTimeContainer">
-    <div class="totalTimeItem">
+    <div>
       <div id="idTotalDays" class="totalTimeValue">00</div>
       <div class="totalTimeLabel">DAYS</div>
     </div>
-    <div class="totalTimeItem">
+    <div>
       <div id="idTotalHours" class="totalTimeValue">00</div>
       <div class="totalTimeLabel">HOURS</div>
     </div>
-    <div class="totalTimeItem">
+    <div>
       <div id="idTotalMinutes" class="totalTimeValue">00</div>
       <div class="totalTimeLabel">MINUTES</div>
     </div>
-    <div class="totalTimeItem">
+    <div>
       <div id="idTotalSeconds" class="totalTimeValue">00</div>
       <div class="totalTimeLabel">SECONDS</div>
     </div>
   </div>
   
   <div class="controlButtonsContainer">
-    <img class="imgIcon" src="img/timer_start.png" alt="Start" onclick="clickStart()">
-    <img class="imgIcon" src="img/timer_pause.png" alt="Pause" onclick="clickPause()">
+    <img id="idStartBtn" class="imgIcon" src="img/timer_start.png" alt="Start" onclick="clickStart()">
+    <img id="idStopBtn" class="imgIcon" src="img/timer_pause.png" alt="Pause" onclick="clickPause()">
   </div>
 
-  <div class="controlButtonsContainer panelTopGap">
-    <img class="imgIcon" src="img/timer_reset.png" alt="Reset" onclick="clickReset()">
+  <div id="idStatisticsRoot" class="statisticsTableContainer"></div>
+
+  <div class="controlButtonsContainer">
+    <img id="idResetBtn" class="imgIcon" src="img/timer_reset.png" alt="Reset" onclick="clickReset()">
   </div>
 
   <script type="text/javascript" src="./script.js"></script>
