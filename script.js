@@ -5,8 +5,10 @@ let currentTimeStart, currentTimeStop;
 let isStarted = false;
 
 function loadTime() {
-  totalSeconds = parseInt(window.localStorage.getItem('totalSeconds'));
-  statisticsJson = JSON.parse(window.localStorage.getItem('statistics'));
+  const lsTotSec = window.localStorage.getItem('totalSeconds');
+  const lsStat = window.localStorage.getItem('statistics')
+  totalSeconds = lsTotSec ? parseInt(lsTotSec) : 0;
+  statisticsJson = lsStat ? JSON.parse(lsStat) : [];
 }
 
 function saveTime() {
